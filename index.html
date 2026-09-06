@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EARTHRIXX — Cinematic Video Editor &amp; Colorist</title>
+  <meta name="description" content="EARTHRIXX is a cinematic video editor and colorist crafting music videos, commercials, documentaries and wedding films. Open for freelance worldwide.">
+  <meta property="og:title" content="EARTHRIXX — Cinematic Video Editor & Colorist">
+  <meta property="og:description" content="I cut stories. Music videos, commercials, documentaries, wedding films.">
+  <meta property="og:image" content="assets/img/hero-poster.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0909">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f73a0b'/%3E%3Cpath d='M24 18l24 14-24 14z' fill='%230a0909'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript>
+    <style>
+      .preloader, .cursor, .cursor-ring { display: none !important; }
+      .reveal, .line__inner { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__row">
+      <span class="preloader__name">EARTHRIXX</span>
+      <span class="preloader__count mono" id="loadCount">0%</span>
+    </div>
+    <div class="preloader__bar"><span id="loadBar"></span></div>
+  </div>
+
+  <!-- ══════════ CUSTOM CURSOR ══════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header class="header" id="header">
+    <a href="#top" class="header__logo" data-cursor="link">
+      <span class="header__mark">E/R</span>
+      <span class="header__name">EARTHRIXX<sup>®</sup></span>
+    </a>
+    <nav class="header__nav" aria-label="Primary">
+      <a href="#work" data-cursor="link">WORK</a>
+      <a href="#reel" data-cursor="link">REEL</a>
+      <a href="#services" data-cursor="link">SERVICES</a>
+      <a href="#about" data-cursor="link">ABOUT</a>
+    </nav>
+    <a href="#contact" class="header__cta mono" data-cursor="link">LET'S TALK</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" data-cursor="link">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ══════════ MOBILE MENU ══════════ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Mobile">
+      <a href="#work"><span class="mono">01</span>WORK</a>
+      <a href="#reel"><span class="mono">02</span>REEL</a>
+      <a href="#services"><span class="mono">03</span>SERVICES</a>
+      <a href="#about"><span class="mono">04</span>ABOUT</a>
+      <a href="#contact"><span class="mono">05</span>CONTACT</a>
+    </nav>
+    <p class="menu__foot mono">pawarkammu1@gmail.com</p>
+  </div>
+
+  <main>
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+          <source src="assets/video/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow mono reveal">©2026 — INDEPENDENT VIDEO EDITOR &amp; COLORIST</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="line__inner outline">CINEMATIC</span></span>
+          <span class="line"><span class="line__inner">VIDEO EDITOR</span></span>
+          <span class="line"><span class="line__inner">AND COLORIST<span class="accent">.</span></span></span>
+        </h1>
+        <div class="hero__meta mono reveal">
+          <p>BASED IN Betul, Madhya Pradesh, INDIA</p>
+          <p>WORKING PAN INDIA</p>
+          <a class="hero__scroll" href="#reel" data-cursor="link">SCROLL FOR PROOF ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>NOW BOOKING FREELANCE — REEL VIDEOS — COMMERCIALS — DOCUMENTARY — STORYTELLING FILMS — SPORTS EDITS —&nbsp;</span>
+        <span>NOW BOOKING FREELANCE — REEL VIDEOS — COMMERCIALS — DOCUMENTARY — STORYTELLING FILMS — SPORTS EDITS —&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ SHOWREEL ══════════ -->
+    <section class="reel section" id="reel">
+      <div class="section__head reveal">
+        <h2 class="section__tag mono">(SHOWREEL)</h2>
+        <p class="section__note mono">2026 — 1 MIN 12 SEC</p>
+      </div>
+      <button class="reel__frame reveal" id="reelOpen" data-cursor="play" aria-label="Play showreel">
+        <img src="assets/img/hero-poster.jpg" alt="Showreel cover frame — editing suite at night" loading="lazy">
+        <span class="reel__btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          PLAY REEL
+        </span>
+      </button>
+    </section>
+
+    <!-- ══════════ SELECTED WORK ══════════ -->
+    <section class="work section" id="work">
+      <div class="section__head reveal">
+        <h2 class="section__tag mono">(SELECTED WORK)</h2>
+        <p class="section__note mono">07 PROJECTS / 2024 — 2026</p>
+      </div>
+
+      <div class="work__grid">
+
+        <article class="work__item span7 reveal" data-video="assets/video/hover-music.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-music.jpg" alt="Still from Neon Nights music video — singer on a haze-filled stage" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">01</span>
+            <h3 class="work__title">NEON NIGHTS</h3>
+            <p class="work__cat mono">MUSIC VIDEO — 2026</p>
+          </div>
+        </article>
+
+        <article class="work__item span5 reveal" data-video="assets/video/hover-commercial.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-commercial.jpg" alt="Still from Amber commercial — perfume bottle with dramatic lighting" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">02</span>
+            <h3 class="work__title">AMBER</h3>
+            <p class="work__cat mono">COMMERCIAL — 2025</p>
+          </div>
+        </article>
+
+        <article class="work__item span5 reveal" data-video="assets/video/hover-doc.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-doc.jpg" alt="Still from Hands of Time documentary — craftsman at work in golden light" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">03</span>
+            <h3 class="work__title">HANDS OF TIME</h3>
+            <p class="work__cat mono">DOCUMENTARY — 2025</p>
+          </div>
+        </article>
+
+        <article class="work__item span7 reveal" data-video="assets/video/hover-wedding.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-wedding.jpg" alt="Still from Aisha and Rohan wedding film — couple dancing under string lights" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">04</span>
+            <h3 class="work__title">AISHA &amp; ROHAN</h3>
+            <p class="work__cat mono">WEDDING FILM — 2025</p>
+          </div>
+        </article>
+
+        <article class="work__item span12 reveal" data-video="assets/video/hover-travel.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-travel.jpg" alt="Still from Coastlines travel film — aerial view of a coastal mountain road at dusk" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">05</span>
+            <h3 class="work__title">COASTLINES</h3>
+            <p class="work__cat mono">TRAVEL FILM — 2024</p>
+          </div>
+        </article>
+
+        <article class="work__item span6 reveal" data-video="assets/video/hover-sports.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-sports.jpg" alt="Still from Round 12 sports edit — boxer wrapping hands in a dark gym" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">06</span>
+            <h3 class="work__title">ROUND 12</h3>
+            <p class="work__cat mono">SPORTS EDIT — 2024</p>
+          </div>
+        </article>
+
+        <article class="work__item span6 reveal" data-video="assets/video/hover-fashion.mp4">
+          <div class="work__media" data-cursor="play">
+            <img src="assets/img/work-fashion.jpg" alt="Still from Silk and Static fashion film — model in dramatic side light" loading="lazy">
+            <video muted loop playsinline preload="none"></video>
+            <span class="work__chip mono">PLAY CLIP</span>
+          </div>
+          <div class="work__info">
+            <span class="work__index mono">07</span>
+            <h3 class="work__title">SILK &amp; STATIC</h3>
+            <p class="work__cat mono">FASHION FILM — 2024</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════ SERVICES ══════════ -->
+    <section class="services section" id="services">
+      <div class="section__head reveal">
+        <h2 class="section__tag mono">(SERVICES)</h2>
+        <p class="section__note mono">WHAT I DO BEST</p>
+      </div>
+      <ul class="services__list">
+        <li class="service reveal">
+          <span class="service__num mono">/01</span>
+          <div class="service__body">
+            <h3 class="service__name">VIDEO EDITING</h3>
+            <p class="service__desc">Narrative-first assembly, pacing and structure. From raw rushes to a locked cut that keeps thumbs still and eyes glued — story, rhythm, emotion.</p>
+          </div>
+          <p class="service__tools mono">PREMIERE PRO / RESOLVE</p>
+        </li>
+        <li class="service reveal">
+          <span class="service__num mono">/02</span>
+          <div class="service__body">
+            <h3 class="service__name">COLOR GRADING</h3>
+            <p class="service__desc">Signature looks built shot by shot — from clean commercial polish to heavy filmic grades. LUT design, shot matching, HDR delivery.</p>
+          </div>
+          <p class="service__tools mono">DAVINCI RESOLVE</p>
+        </li>
+        <li class="service reveal">
+          <span class="service__num mono">/03</span>
+          <div class="service__body">
+            <h3 class="service__name">MOTION GRAPHICS</h3>
+            <p class="service__desc">Kinetic type, title sequences, lower thirds and transitions that feel designed, not decorated. Motion that carries the edit forward.</p>
+          </div>
+          <p class="service__tools mono">AFTER EFFECTS</p>
+        </li>
+        <li class="service reveal">
+          <span class="service__num mono">/04</span>
+          <div class="service__body">
+            <h3 class="service__name">SOUND DESIGN</h3>
+            <p class="service__desc">The half of the picture you hear. SFX layers, foley, dialogue cleanup and music sync that makes every cut land twice as hard.</p>
+          </div>
+          <p class="service__tools mono">AUDITION / FAIRLIGHT</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section class="about section" id="about">
+      <div class="section__head reveal">
+        <h2 class="section__tag mono">(ABOUT)</h2>
+        <p class="section__note mono">THE PERSON BEHIND THE CUTS</p>
+      </div>
+      <div class="about__grid">
+        <figure class="about__photo reveal" data-cursor="link">
+          <img src="assets/img/about-portrait.jpg" alt="Alex Carter editing at a workstation, seen from behind" loading="lazy">
+          <figcaption class="mono">FIG.01 — WHERE THE MAGIC HAPPENS</figcaption>
+        </figure>
+        <div class="about__text reveal">
+          <p class="about__lead">I'm Alex — a video editor and colorist who believes the edit <em>is</em> the story. Six years in, I've cut everything from 15-second spots to 40-minute documentaries, and I still get goosebumps when a cut lands perfectly.</p>
+          <p>My work lives at the intersection of rhythm and emotion: music videos that hit like the track, commercials that sell without shouting, documentaries that breathe. I work closely with directors, agencies and creators — from the first assembly to the final grade — and I sweat every frame in between.</p>
+          <p>When I'm not editing, I'm reverse-engineering trailers frame by frame, hunting for the perfect LUT, or shooting b-roll nobody asked for. If you have footage and a feeling, I can turn it into a film.</p>
+          <ul class="about__stats">
+            <li><span class="stat__num" data-count="6">0</span><span class="stat__suffix">+</span><span class="stat__label mono">YEARS EXPERIENCE</span></li>
+            <li><span class="stat__num" data-count="250">0</span><span class="stat__suffix">+</span><span class="stat__label mono">PROJECTS DELIVERED</span></li>
+            <li><span class="stat__num" data-count="60">0</span><span class="stat__suffix">+</span><span class="stat__label mono">HAPPY CLIENTS</span></li>
+            <li><span class="stat__num" data-count="15">0</span><span class="stat__suffix">M+</span><span class="stat__label mono">TOTAL VIEWS</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CLIENTS MARQUEE ══════════ -->
+    <div class="clients" aria-hidden="true">
+      <div class="clients__track">
+        <span>NOIR FILMS — LUMEN MEDIA — PULSE STUDIOS — HALO RECORDS — ATLAS SPORTS — VELO COLLECTIONS — FRAMEHOUSE — ORANGE DOOR —&nbsp;</span>
+        <span>NOIR FILMS — LUMEN MEDIA — PULSE STUDIOS — HALO RECORDS — ATLAS SPORTS — VELO COLLECTIONS — FRAMEHOUSE — ORANGE DOOR —&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <section class="contact section" id="contact">
+      <div class="section__head reveal">
+        <h2 class="section__tag mono">(CONTACT)</h2>
+        <p class="section__note mono">USUALLY REPLIES WITHIN 24H</p>
+      </div>
+      <h2 class="contact__title reveal">
+        <span class="line"><span class="line__inner">LET'S CUT</span></span>
+        <span class="line"><span class="line__inner">SOMETHING <em class="outline">GREAT</em></span></span>
+      </h2>
+      <div class="contact__row reveal">
+        <a class="btn magnetic" href="mailto:pawarkammu1@gmail.com" data-cursor="link">
+          pawarkammu1@gmail.com
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </a>
+        <p class="contact__hint mono">GOT FOOTAGE? GOOD. THAT'S ALL I NEED.</p>
+      </div>
+      <div class="contact__socials mono reveal">
+        <a href="https://instagram.com" target="_blank" rel="noopener" data-cursor="link">INSTAGRAM</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" data-cursor="link">YOUTUBE</a>
+        <a href="https://vimeo.com" target="_blank" rel="noopener" data-cursor="link">VIMEO</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" data-cursor="link">LINKEDIN</a>
+        <a href="https://behance.net" target="_blank" rel="noopener" data-cursor="link">BEHANCE</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <p class="mono">© 2026 ALEX CARTER — ALL RIGHTS RESERVED</p>
+    <p class="mono">LOCAL TIME — <span id="clock">00:00:00</span></p>
+    <a href="#top" class="mono" data-cursor="link">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- ══════════ VIDEO MODAL ══════════ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Video player">
+    <button class="modal__close mono" id="modalClose" aria-label="Close video" data-cursor="link">CLOSE ✕</button>
+    <div class="modal__box">
+      <video id="modalVideo" controls playsinline></video>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
