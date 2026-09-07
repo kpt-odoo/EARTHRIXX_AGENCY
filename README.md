@@ -1,5 +1,7 @@
 # EARTHRIXX AGENCY — Creative Content Studio
 
+Live At - https://kpt-odoo.github.io/EARTHRIXX_AGENCY/
+
 A dark, cinematic portfolio website for **EARTHRIXX AGENCY**, a creative content studio focused on short-form video, social media content, promotional posters, and visual storytelling for modern brands and businesses.
 
 Built to showcase our work and make it easy for potential clients to understand what we do, explore our portfolio, and get in touch.
