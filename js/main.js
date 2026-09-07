@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════════
-   ALEX CARTER — portfolio interactions (vanilla JS, no deps)
+   EARTHRIXX — studio interactions (vanilla JS, no deps)
    ════════════════════════════════════════════════════════════ */
 
 (function () {
@@ -147,7 +147,6 @@
   const modal = document.getElementById('modal');
   const modalVideo = document.getElementById('modalVideo');
   const modalClose = document.getElementById('modalClose');
-  const reelOpen = document.getElementById('reelOpen');
 
   function openModal(src) {
     modalVideo.src = src;
@@ -173,7 +172,6 @@
     });
   });
 
-  reelOpen.addEventListener('click', () => openModal('assets/video/hero-bg.mp4'));
   modalClose.addEventListener('click', closeModal);
   modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', (e) => {
