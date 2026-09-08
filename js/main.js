@@ -231,4 +231,20 @@
       });
     });
   }
+
+  /* ── 11. Visit counter ────────────────────────────────── */
+  const visitCounter = document.getElementById('visitCounter');
+  const visitCount = document.getElementById('visitCount');
+
+  if (visitCounter && visitCount) {
+    fetch('https://abacus.jasoncameron.dev/hit/earthrixx-site/visits')
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((data) => {
+        const n = Number(data && data.value);
+        if (!Number.isFinite(n)) return;
+        visitCount.textContent = String(Math.floor(n)).padStart(6, '0');
+        visitCounter.classList.add('is-ready');
+      })
+      .catch(() => { /* service down → counter stays hidden */ });
+  }
 })();
